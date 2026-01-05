@@ -1,26 +1,534 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="+Redação - Aprenda, organize e pratique redações para alcançar o sucesso no ENEM e vestibulares.">
+    <title>+Redação | Aprenda a Escrever Melhor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ===================== NAVEGAÇÃO ===================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#inicio" class="nav__logo">
+                <span class="logo-plus">+</span>Redação
+            </a>
+            
+            <!-- Menu Mobile Toggle -->
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#inicio" class="nav__link">Início</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#estrutura" class="nav__link">Estrutura</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#repertorios" class="nav__link">Repertórios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#enviar" class="nav__link nav__link--cta">Enviar Redação</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <main>
+        <!-- ===================== HERO / INÍCIO ===================== -->
+        <section class="hero" id="inicio">
+            <div class="hero__bg"></div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__badge">📚 Preparação para ENEM e Vestibulares</span>
+                    <h1 class="hero__title">
+                        Aprenda a escrever <span class="text-gradient">redações nota 1000</span>
+                    </h1>
+                    <p class="hero__description">
+                        O <strong>+Redação</strong> é seu guia completo para entender, treinar e 
+                        melhorar suas redações. Aqui você encontra estrutura, repertórios e 
+                        dicas práticas para conquistar a nota máxima.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#estrutura" class="btn btn--primary">
+                            Começar a Aprender
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </a>
+                        <a href="#enviar" class="btn btn--secondary">
+                            Enviar Minha Redação
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__card">
+                        <div class="hero__card-icon">✍️</div>
+                        <h3>Estrutura Clara</h3>
+                        <p>Introdução, desenvolvimento e conclusão bem definidos</p>
+                    </div>
+                    <div class="hero__card hero__card--accent">
+                        <div class="hero__card-icon">📖</div>
+                        <h3>Repertórios</h3>
+                        <p>Citações, dados e referências para enriquecer seu texto</p>
+                    </div>
+                    <div class="hero__card">
+                        <div class="hero__card-icon">🎯</div>
+                        <h3>Prática</h3>
+                        <p>Envie sua redação e receba orientações</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+        <!-- ===================== ESTRUTURA DA REDAÇÃO ===================== -->
+        <section class="section section--structure" id="estrutura">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">Fundamentos</span>
+                    <h2 class="section__title">Organização e Base da Redação</h2>
+                    <p class="section__subtitle">
+                        Uma boa redação começa com uma estrutura sólida. Aprenda os elementos 
+                        essenciais para organizar suas ideias de forma clara e convincente.
+                    </p>
+                </header>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <!-- Dicas de Organização -->
+                <div class="tips-grid">
+                    <article class="tip-card">
+                        <div class="tip-card__number">01</div>
+                        <h3 class="tip-card__title">Leia o tema com atenção</h3>
+                        <p class="tip-card__text">
+                            Antes de escrever, leia a proposta pelo menos duas vezes. 
+                            Identifique as palavras-chave e o que está sendo pedido.
+                        </p>
+                    </article>
+                    <article class="tip-card">
+                        <div class="tip-card__number">02</div>
+                        <h3 class="tip-card__title">Faça um rascunho</h3>
+                        <p class="tip-card__text">
+                            Anote suas ideias principais antes de começar. 
+                            Organize argumentos, exemplos e a proposta de intervenção.
+                        </p>
+                    </article>
+                    <article class="tip-card">
+                        <div class="tip-card__number">03</div>
+                        <h3 class="tip-card__title">Mantenha a coerência</h3>
+                        <p class="tip-card__text">
+                            Cada parágrafo deve se conectar ao anterior. 
+                            Use conectivos para guiar o leitor pelo seu raciocínio.
+                        </p>
+                    </article>
+                    <article class="tip-card">
+                        <div class="tip-card__number">04</div>
+                        <h3 class="tip-card__title">Revise sempre</h3>
+                        <p class="tip-card__text">
+                            Reserve os últimos minutos para reler. 
+                            Corrija erros de ortografia e melhore a clareza das frases.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- Estrutura Completa -->
+                <div class="structure-breakdown">
+                    <h3 class="structure-breakdown__title">
+                        <span class="icon-book">📝</span>
+                        Estrutura Básica da Redação
+                    </h3>
+                    
+                    <div class="structure-parts">
+                        <!-- Introdução -->
+                        <div class="structure-part">
+                            <div class="structure-part__header">
+                                <span class="structure-part__tag structure-part__tag--intro">Introdução</span>
+                                <span class="structure-part__lines">~7 linhas</span>
+                            </div>
+                            <div class="structure-part__content">
+                                <h4>O que incluir:</h4>
+                                <ul>
+                                    <li><strong>Contextualização:</strong> Apresente o tema de forma ampla, usando um repertório (citação, dado histórico, referência cultural).</li>
+                                    <li><strong>Tese:</strong> Exponha seu ponto de vista sobre o problema de forma clara e objetiva.</li>
+                                    <li><strong>Encaminhamento:</strong> Indique brevemente os argumentos que serão desenvolvidos.</li>
+                                </ul>
+                                <div class="structure-part__example">
+                                    <span class="example-label">Exemplo de início:</span>
+                                    <p>"Segundo o filósofo Zygmunt Bauman, a sociedade contemporânea é marcada pela fluidez das relações..."</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desenvolvimento -->
+                        <div class="structure-part">
+                            <div class="structure-part__header">
+                                <span class="structure-part__tag structure-part__tag--dev">Desenvolvimento</span>
+                                <span class="structure-part__lines">~14 linhas (2 parágrafos)</span>
+                            </div>
+                            <div class="structure-part__content">
+                                <h4>O que incluir em cada parágrafo:</h4>
+                                <ul>
+                                    <li><strong>Tópico frasal:</strong> Apresente a ideia central do parágrafo.</li>
+                                    <li><strong>Argumentação:</strong> Desenvolva o argumento com explicações e análises.</li>
+                                    <li><strong>Repertório:</strong> Use dados, citações ou exemplos para comprovar.</li>
+                                    <li><strong>Fechamento:</strong> Conecte o argumento à tese inicial.</li>
+                                </ul>
+                                <div class="structure-part__tip">
+                                    💡 <strong>Dica:</strong> Cada parágrafo de desenvolvimento deve abordar UM argumento principal. Não misture muitas ideias!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Conclusão -->
+                        <div class="structure-part">
+                            <div class="structure-part__header">
+                                <span class="structure-part__tag structure-part__tag--conc">Conclusão</span>
+                                <span class="structure-part__lines">~7 linhas</span>
+                            </div>
+                            <div class="structure-part__content">
+                                <h4>Proposta de Intervenção (obrigatória no ENEM):</h4>
+                                <ul>
+                                    <li><strong>Agente:</strong> Quem vai realizar a ação? (Governo, escolas, mídia, sociedade...)</li>
+                                    <li><strong>Ação:</strong> O que será feito? (Criar leis, campanhas, programas...)</li>
+                                    <li><strong>Modo:</strong> Como será feito? (Por meio de, através de...)</li>
+                                    <li><strong>Finalidade:</strong> Para que serve essa ação?</li>
+                                    <li><strong>Detalhamento:</strong> Especifique um dos elementos acima.</li>
+                                </ul>
+                                <div class="structure-part__example">
+                                    <span class="example-label">Modelo:</span>
+                                    <p>"Portanto, cabe ao [AGENTE] promover [AÇÃO], por meio de [MODO], a fim de [FINALIDADE]."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== REPERTÓRIOS SOCIOCULTURAIS ===================== -->
+        <section class="section section--repertoires" id="repertorios">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">Enriqueça seu texto</span>
+                    <h2 class="section__title">Repertórios Socioculturais</h2>
+                    <p class="section__subtitle">
+                        Repertórios são referências que você usa para comprovar seus argumentos. 
+                        Podem ser citações de filósofos, dados estatísticos, obras literárias, 
+                        filmes, músicas e acontecimentos históricos.
+                    </p>
+                </header>
+
+                <!-- Navegação de Temas -->
+                <div class="themes-nav">
+                    <button class="theme-tab theme-tab--active" data-theme="queimadas">
+                        🔥 Queimadas
+                    </button>
+                    <button class="theme-tab" data-theme="educacao">
+                        📚 Educação
+                    </button>
+                    <button class="theme-tab" data-theme="tecnologia">
+                        💻 Tecnologia
+                    </button>
+                    <button class="theme-tab theme-tab--soon">
+                        ➕ Em breve...
+                    </button>
+                </div>
+
+                <!-- Conteúdo dos Temas -->
+                <div class="theme-content">
+                    <!-- TEMA: Queimadas -->
+                    <article class="theme-panel theme-panel--active" id="theme-queimadas">
+                        <div class="theme-panel__header">
+                            <div class="theme-panel__icon">🔥</div>
+                            <div>
+                                <h3 class="theme-panel__title">Queimadas no Brasil</h3>
+                                <p class="theme-panel__meta">Meio ambiente • Cidadania • Políticas públicas</p>
+                            </div>
+                        </div>
+
+                        <div class="theme-panel__body">
+                            <!-- Explicação do Problema -->
+                            <div class="repertoire-block">
+                                <h4 class="repertoire-block__title">
+                                    <span class="block-icon">📋</span>
+                                    Entendendo o Problema
+                                </h4>
+                                <div class="repertoire-block__content">
+                                    <p>
+                                        As queimadas representam uma das maiores crises ambientais do Brasil 
+                                        contemporâneo. O problema afeta não apenas a biodiversidade e os 
+                                        ecossistemas, mas também a saúde pública, a economia e a imagem 
+                                        internacional do país. Grande parte das queimadas tem origem criminosa, 
+                                        sendo usadas ilegalmente para expandir áreas de pasto e agricultura, 
+                                        especialmente na Amazônia e no Cerrado. Além disso, as mudanças climáticas 
+                                        têm intensificado períodos de seca, tornando a vegetação mais vulnerável 
+                                        ao fogo. Esse cenário exige uma discussão profunda sobre responsabilidade 
+                                        ambiental, fiscalização e o papel de cada cidadão na preservação.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Referência Filosófica -->
+                            <div class="repertoire-block repertoire-block--philosophy">
+                                <h4 class="repertoire-block__title">
+                                    <span class="block-icon">🎓</span>
+                                    Referência Filosófica
+                                </h4>
+                                <div class="repertoire-block__content">
+                                    <blockquote class="philosophy-quote">
+                                        <p>"O homem é o lobo do próprio homem."</p>
+                                        <cite>— Thomas Hobbes, filósofo inglês (1588-1679)</cite>
+                                    </blockquote>
+                                    <div class="quote-application">
+                                        <strong>Como usar:</strong> A frase de Hobbes pode ser aplicada para 
+                                        mostrar que, ao destruir o meio ambiente por ganância, o ser humano 
+                                        age contra seus próprios interesses de sobrevivência. As queimadas 
+                                        criminosas exemplificam como a busca por lucro imediato prejudica a 
+                                        coletividade e as gerações futuras.
+                                    </div>
+                                    
+                                    <div class="alternative-refs">
+                                        <strong>Outras referências possíveis:</strong>
+                                        <ul>
+                                            <li><strong>Hans Jonas:</strong> "Princípio da Responsabilidade" — devemos agir de modo que nossas ações não destruam as condições de vida futura.</li>
+                                            <li><strong>Ailton Krenak:</strong> "Ideias para Adiar o Fim do Mundo" — reflexão indígena sobre a relação predatória com a natureza.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Dados Estatísticos -->
+                            <div class="repertoire-block repertoire-block--data">
+                                <h4 class="repertoire-block__title">
+                                    <span class="block-icon">📊</span>
+                                    Dados e Estatísticas
+                                </h4>
+                                <div class="repertoire-block__content">
+                                    <div class="stats-grid">
+                                        <div class="stat-card">
+                                            <span class="stat-card__value">197 mil</span>
+                                            <span class="stat-card__label">Focos de incêndio no Brasil em 2024</span>
+                                            <span class="stat-card__source">Fonte: INPE</span>
+                                        </div>
+                                        <div class="stat-card">
+                                            <span class="stat-card__value">+85%</span>
+                                            <span class="stat-card__label">Aumento de queimadas no Cerrado (2023-2024)</span>
+                                            <span class="stat-card__source">Fonte: INPE</span>
+                                        </div>
+                                        <div class="stat-card">
+                                            <span class="stat-card__value">22.8 mi</span>
+                                            <span class="stat-card__label">Hectares de vegetação perdidos anualmente</span>
+                                            <span class="stat-card__source">Fonte: MapBiomas</span>
+                                        </div>
+                                    </div>
+                                    <div class="data-tip">
+                                        💡 <strong>Dica:</strong> Ao usar dados, sempre indique a fonte para 
+                                        dar credibilidade. Você pode escrever: "Segundo dados do INPE..."
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conexões -->
+                            <div class="repertoire-block repertoire-block--connections">
+                                <h4 class="repertoire-block__title">
+                                    <span class="block-icon">🔗</span>
+                                    Conexões Temáticas
+                                </h4>
+                                <div class="repertoire-block__content">
+                                    <div class="connections-list">
+                                        <div class="connection-item">
+                                            <span class="connection-item__emoji">🌍</span>
+                                            <div>
+                                                <strong>Meio Ambiente:</strong>
+                                                <p>Destruição de biomas, perda de biodiversidade, contribuição para o aquecimento global, poluição do ar.</p>
+                                            </div>
+                                        </div>
+                                        <div class="connection-item">
+                                            <span class="connection-item__emoji">🏥</span>
+                                            <div>
+                                                <strong>Saúde Pública:</strong>
+                                                <p>Aumento de doenças respiratórias, sobrecarga do sistema de saúde, impacto na qualidade de vida.</p>
+                                            </div>
+                                        </div>
+                                        <div class="connection-item">
+                                            <span class="connection-item__emoji">👥</span>
+                                            <div>
+                                                <strong>Sociedade e Cidadania:</strong>
+                                                <p>Responsabilidade coletiva, educação ambiental, participação democrática na defesa do meio ambiente.</p>
+                                            </div>
+                                        </div>
+                                        <div class="connection-item">
+                                            <span class="connection-item__emoji">⚖️</span>
+                                            <div>
+                                                <strong>Políticas Públicas:</strong>
+                                                <p>Fiscalização ambiental, leis de proteção, punição para crimes ambientais, investimento em prevenção.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- TEMA: Educação (Em construção) -->
+                    <article class="theme-panel" id="theme-educacao">
+                        <div class="theme-panel__header">
+                            <div class="theme-panel__icon">📚</div>
+                            <div>
+                                <h3 class="theme-panel__title">Desafios da Educação no Brasil</h3>
+                                <p class="theme-panel__meta">Em construção</p>
+                            </div>
+                        </div>
+                        <div class="theme-panel__body">
+                            <div class="coming-soon">
+                                <span class="coming-soon__icon">🚧</span>
+                                <h4>Conteúdo em desenvolvimento</h4>
+                                <p>Estamos preparando repertórios completos sobre educação. Volte em breve!</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- TEMA: Tecnologia (Em construção) -->
+                    <article class="theme-panel" id="theme-tecnologia">
+                        <div class="theme-panel__header">
+                            <div class="theme-panel__icon">💻</div>
+                            <div>
+                                <h3 class="theme-panel__title">Tecnologia e Sociedade</h3>
+                                <p class="theme-panel__meta">Em construção</p>
+                            </div>
+                        </div>
+                        <div class="theme-panel__body">
+                            <div class="coming-soon">
+                                <span class="coming-soon__icon">🚧</span>
+                                <h4>Conteúdo em desenvolvimento</h4>
+                                <p>Estamos preparando repertórios sobre tecnologia e seus impactos. Volte em breve!</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ENVIO DE REDAÇÃO ===================== -->
+        <section class="section section--submit" id="enviar">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">Pratique</span>
+                    <h2 class="section__title">Envie sua Redação</h2>
+                    <p class="section__subtitle">
+                        Escreva ou cole sua redação abaixo. Após o envio, ela será encaminhada 
+                        para análise e você poderá receber orientações para melhorar.
+                    </p>
+                </header>
+
+                <div class="submit-container">
+                    <form class="submit-form" id="essay-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Seu nome</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    placeholder="Digite seu nome completo"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Seu e-mail</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="seuemail@exemplo.com"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="theme" class="form-label">Tema da redação (opcional)</label>
+                            <input 
+                                type="text" 
+                                id="theme" 
+                                name="theme" 
+                                class="form-input" 
+                                placeholder="Ex: Os desafios da educação no Brasil"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="essay" class="form-label">Sua redação</label>
+                            <textarea 
+                                id="essay" 
+                                name="essay" 
+                                class="form-textarea" 
+                                placeholder="Digite ou cole sua redação aqui..."
+                                rows="15"
+                                required
+                            ></textarea>
+                            <div class="textarea-footer">
+                                <span class="char-count" id="char-count">0 caracteres</span>
+                                <span class="line-count" id="line-count">~0 linhas</span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn--primary btn--large">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                                Enviar Redação
+                            </button>
+                            <p class="form-note">
+                                Ao enviar, sua redação será encaminhada por e-mail para análise.
+                            </p>
+                        </div>
+                    </form>
+
+                    <aside class="submit-tips">
+                        <h4 class="submit-tips__title">📝 Antes de enviar, verifique:</h4>
+                        <ul class="submit-tips__list">
+                            <li>Sua redação tem entre 7 e 30 linhas?</li>
+                            <li>A introdução apresenta o tema e sua tese?</li>
+                            <li>Os parágrafos de desenvolvimento têm argumentos e repertórios?</li>
+                            <li>A conclusão tem uma proposta de intervenção completa?</li>
+                            <li>Você revisou erros de português?</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#inicio" class="footer__logo">
+                        <span class="logo-plus">+</span>Redação
+                    </a>
+                    <p class="footer__tagline">
+                        Seu guia para escrever redações de sucesso.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <a href="#inicio">Início</a>
+                    <a href="#estrutura">Estrutura</a>
+                    <a href="#repertorios">Repertórios</a>
+                    <a href="#enviar">Enviar Redação</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 +Redação. Feito com 💚 para estudantes brasileiros.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
 </html>
